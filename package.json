@@ -1,0 +1,42 @@
+{
+  "name": "cycle-phase-engine",
+  "version": "0.1.0",
+  "description": "Framework-free menstrual cycle phase calculator. Luteal-anchored math and hardened edge-case handling — the part every period tracker builds inline and most get wrong.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "menstrual-cycle",
+    "period-tracker",
+    "femtech",
+    "cycle-phase",
+    "ovulation",
+    "luteal",
+    "follicular",
+    "womens-health",
+    "typescript"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  }
+}
